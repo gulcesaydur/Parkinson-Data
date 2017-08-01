@@ -1,0 +1,15 @@
+Project 1 Steps
+
+1. DATA
+The dataset is https://archive.ics.uci.edu/ml/datasets/Parkinsons. This dataset is a dataset with 23 columns and 197 rows with no missing data. From the columns, the status column is a class column and has two types, 0 and 1. 0 indicates absence of sickness and 1 Indicates the presence of Parkinson's disease. The other columns contain the results of surveys made on people who are likely to have the disease.
+
+2. DATA TRANSFORMATION
+The first column is of string type, and the first three parts are categories separated by "_". There are 32 different types in all of these categories. In order to be able to use these string categories more effectively in the data, digitization process is applied to the string terms. Instead of putting an integer value instead of each one, 32 columns are added to the column, and the string column is erased after completing the data with binary values as to whether it is that type or not. Thus, the data converts into the form of 55 columns and 197 rows. For this conversion, a script has been written that takes advantage of the python language's numpy and pandas libraries.
+
+3. ALGORITHM TESTING
+The obtained data was tested with RapidMiner and Weka tools through various algorithms and tried to determine the best and most successful algorithm. For this purpose, after uploading the data to Weka's explorer, tests of the KNN algorithm for k = 1, 3, 5 and 7 and the Random Forest algorithm for the same validations are performed in the Classify tab with Split Validation in 55% - 70% intervals and Cross Validation in 3 – 10 fold intervals.
+On the RapidMiner side, Split Validation, Cross Validation, manual split which is dividen into 140 rows as train data and 57 rows of test data,  SVM, KNN, Naive Bayes, Decision Tree and Random Forest algorithms have been tried.
+At the end of the tests, the most successful algorithms were seen as Naive Bayes, Decision Tree and Random Forest triplets, but the size reduction of the train set was reflected positively to the accuraccy.
+
+4. MACHINE LEARNING
+The algorithms found in the previous phase were tested on the data using Pandas, Numpy and Sckit Learn librarians of the Python language. Thus, a script that reads the data from the database instead of the csv file and a script that can work with live data has been obtained. With this script, people's disease status can be detected with 70% success.

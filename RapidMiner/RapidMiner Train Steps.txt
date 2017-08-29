@@ -1,0 +1,43 @@
+Normalized Parkinson Data is given as the input. This data is split with the cross validation method. (Fold = 10). The algorithms below is trained respectively and the results are below:
+kNN	k=1	Accuracy= 89.76%	+/- 4.51 stddev	
+		True1	True0	Class precision
+Pred1		135	8	94.41%
+Pred0 		12	40	76.92%
+Class recall	91.84%	83.33%	
+
+kNN	k=3	Accuracy= 88.74%	+/- 5.54 stddev	
+		True1	True0	Class precision
+Pred1		139	14	90.85%
+Pred0 		8	34	80.95%
+Class recall	94.56%	70.83%	
+
+kNN	k=5	Accuracy= 85.13%	+/- 7.14 stddev	
+		True1	True0	Class precision
+Pred1		135	17	88.82%
+Pred0 		12	31	72.09%
+Class recall	91.84%	64.58%	
+
+SVM		Accuracy= 100%	+/- 0 stddev	
+		True1	True0	Class precision
+Pred1		147	0	100%
+Pred0 		0	48	100%
+Class recall	100%	100%	
+
+Naive Bayes	Accuracy= 100%	+/- 0 stddev	
+		True1	True0	Class precision
+Pred1		147	0	100%
+Pred0 		0	48	100%
+Class recall	100%	100%	
+
+Decision Tree	Accuracy= 95.39%	+/- 3.52 stddev	
+		True1	True0	Class precision
+Pred1		144	6	96%
+Pred0 		3	42	93.33%
+Class recall	97.96%	87.5%	
+
+Random Forest	Accuracy= 83.58%	+/- 3.86 stddev	
+		True1	True0	Class precision
+Pred1		146	31	82.49%
+Pred0 		1	17	94.44%
+Class recall	99.32%	35.42%	
+

@@ -1,0 +1,43 @@
+the first 140 rows of Normalized Parkinson Data is split as the train data. The rest 55 rows are split as the test data and these two are saved as seperated .csv files. Then, they are given as inputs to RapidMiner and the results are shown below: 
+kNN    k=1	Accuracy= 67.27%		
+		True0	True1	Class precision
+Pred0		6	0	100%
+Pred1		18	31	63.27%
+Class recall	25.00%	100%	
+
+kNN    k=3	Accuracy= 65.45%		
+		True0	True1	Class precision
+Pred0		6	1	85.71%
+Pred1		18	30	62.50%
+Class recall	25.00%	96.77%	
+
+kNN    k=5	Accuracy= 63.64%		
+		True0	True1	Class precision
+Pred0		5	1	83.33%
+Pred1		19	30	61.22%
+Class recall	20.83%	96.77%	
+
+SVM		Accuracy= 61.28%		
+		True0	True1	Class precision
+Pred0		3	0	100%
+Pred1		21	31	59.62%
+Class recall	12.50%	100%	
+
+Naive Bayes	Accuracy= 70.91%		
+		True0	True1	Class precision
+Pred0		18	10	64.29%
+Pred1		6	21	77.78%
+Class recall	75.00%	67.74%	
+
+Decision Tree	Accuracy= 63.64%		
+		True0	True1	Class precision
+Pred0		4	0	100%
+Pred1		20	31	60.78%
+Class recall	16.67%%	100%	
+
+Random Forest	Accuracy= 61.82%		
+		True0	True1	Class precision
+Pred0		3	0	100%
+Pred1		21	31	59.62%
+Class recall	12.50%	100%	
+
